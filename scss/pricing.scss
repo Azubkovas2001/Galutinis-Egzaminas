@@ -1,0 +1,111 @@
+section.fifth {
+    height: 883px;
+    width: 100%;
+    background: $skyblue;
+    padding: 20px;
+
+    .center {
+        text-align: center;
+        position: relative;
+        @include flex;
+        color: $white;
+
+        h1 {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            padding: 50px;
+            font: normal normal 600 36px/43px Montserrat;
+        }
+
+        hr {
+            width: 64px;
+            height: 1px;
+            background-color: $lightgreen;
+            border: none;
+            margin: 120px 0 50px 0;
+            position: relative;
+        }
+
+        p {
+            padding-bottom: 20px;
+            font: normal normal normal 14px/20px Montserrat;
+        }
+    }
+
+    .content {
+        display: flex;
+        text-align: center;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        h4 {
+            width: 343px;
+            height: 59px;
+            background: #333333;
+            color: $white;
+            padding: 20px;
+            border-radius: 5px 5px 0px 0px;
+            font: normal normal normal 20px/24px Montserrat
+        }
+
+        .basic {
+            flex-direction: column;
+            width: 343px;
+
+            h1 {
+                font-size: 5em;
+                color: $white;
+                width: 343px;
+                height: 100px;
+                background: $dark;
+            }
+
+            p {
+                width: 343px;
+                height: 51px;
+                background: $dark;
+                color: $white;
+                font: normal normal normal 14px/24px Montserrat;
+                text-align: center;
+
+            }
+
+            .dollar:before {
+                content: '$';
+                font-size: 0.5em;
+            }
+
+            hr {
+                width: 343px;
+                height: 6px;
+                background: $lightgreen;
+                border: $lightgreen;
+            }
+
+            p.green {
+                width: 343px;
+                height: 40px;
+                background: $lightgreen;
+                padding: 12.5px;
+                font: normal normal normal 14px/24px Montserrat;
+            }
+
+            li {
+                list-style: none;
+                width: 343px;
+                height: 40px;
+                background: $white;
+                color: $gray;
+                padding: 10px;
+                font: normal normal normal 14px/24px Montserrat;
+            }
+
+            li:last-of-type {
+                border-radius: 0px 0px 5px 5px;
+            }
+        }
+
+    }
+}

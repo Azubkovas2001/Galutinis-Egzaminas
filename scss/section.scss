@@ -1,0 +1,72 @@
+section.third {
+    width: 100%;
+    height: 596px;
+    background: $dark;
+    @include center;
+
+    div {
+        justify-content: center;
+        flex: 1;
+    }
+
+    .img {
+        width: 389px;
+        height: 169px;
+
+    }
+
+    .text {
+        justify-content: start;
+        align-self: flex-start;
+        flex-direction: column;
+        padding: 40px 0px;
+        color: $white;
+        gap: 40px;
+
+        h1 {
+            font: normal normal 600 30px/43px Montserrat;
+        }
+
+    }
+
+    hr {
+        width: 40%;
+        height: 1px;
+        background-color: $lightorange;
+        border: none;
+    }
+
+    p {
+        width: 400px;
+        font: normal normal normal 14px/20px Montserrat;
+    }
+
+    div.firstPara {
+        justify-content: start;
+        display: flex;
+        color: $white;
+
+        align-items: center;
+
+        h1 {
+            color: $white;
+            margin: 10px 20px;
+
+
+        }
+
+        p {
+            color: $white;
+            margin: 0 20px;
+        }
+
+        i {
+            font-size: 2em;
+            border: 4px solid $lightorange;
+            border-radius: 100%;
+            background: $lightorange;
+            padding: 5px;
+        }
+
+    }
+}

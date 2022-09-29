@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.rotate {
+    transform: rotate(-90deg);
+}
+div {
+    display: flex;
+    width: 100%;
+
+    nav {
+        background: $dark 0% 0% no-repeat padding-box;
+        height: 72px;
+        width: 100%;
+        @include center;
+    }
+
+    .topnav-left {
+        justify-content: center;
+    }
+
+    .topnav-right {
+        justify-content: center;
+        gap: 40px;
+
+        #burger {
+            display: none;
+            cursor: pointer;
+            transition: 0.5s;
+            color: $white;
+        }
+    }
+
+    .side-nav {
+        position: fixed;
+        flex-direction: column;
+        background: $dark;
+        text-align: center;
+        width: 200px;
+        padding: 0;
+        transition: transform 0.5s;
+        transform: translateX(-200px);
+        z-index: 1;
+    }
+
+    .side-nav a {
+        background: $dark;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font: normal normal normal 14px/17px Montserrat;
+    }
+
+    a:hover {
+        border-bottom: 2px solid $lightorange;
+    }
+
+    .translate {
+        transform: translateX(0);
+    }
+
+}
